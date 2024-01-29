@@ -1,0 +1,1 @@
+?v=<? echo time() ?>  - using if the style is disconnect in the php file

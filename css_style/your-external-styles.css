@@ -1,0 +1,51 @@
+header{
+    min-height: 100vh;
+}
+
+.module-container {
+    display: inline-block;
+    margin: 3em 1em;
+    text-align: center; 
+}
+p{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.module-container h1{
+    background: blue;
+    transition: 0.4s;
+}
+
+.module-container h1:hover{
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.module-container img {
+    width: 18.2em;
+    height: 20em;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+
+.module-container img:hover{
+    box-shadow:
+    1px 1px #373737;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    transition: .5s ease;
+}
+
+h1{
+    text-align: center;
+    transform: translateY(6em);
+}
+
+
+
+
+

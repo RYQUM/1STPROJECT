@@ -1,0 +1,961 @@
+@font-face {
+    font-family: Play-Bold;
+    src: url(Fonts/Play-Bold.ttf);
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(Fonts/Anton-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: NeonZOne;
+    src: url(Fonts/NeonZone-lgYBe.ttf);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    background: url(image/bg2.jpg) no-repeat center ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 
+header{
+    color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    background: url(../image/bg2.jpg) no-repeat center ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+} */
+
+
+
+
+.sticky  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:url(image/bg2.jpg) no-repeat center ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0 5px 5px #262a65;
+  }
+
+
+
+
+
+
+section{
+    background: url(image/bg2.jpg) no-repeat center ;
+    color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+
+
+}
+
+
+
+
+
+
+
+.container img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #e05200;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+header img:hover{
+    box-shadow: 0 0 3px #1400ca;
+    opacity: .7;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    background: url(../image/bg2.jpg) no-repeat center ;
+
+
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    /* border: 2px solid #05c715 ; */
+    background: #888;
+    padding: 5px;
+    border-radius: 7px;
+    transition: background 0.5s;
+    transition: 0.6s;
+    font-family: Anton;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-shadow: 0 0 2px black;
+    
+}
+
+nav ul li a:hover{
+    color: #e05200;
+    
+    text-shadow: 0 0 2px black;
+}
+
+
+
+header .search h1{
+    font-size: 50px;
+    padding-top: 100px;
+}
+
+header h1{
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+
+/* SEARCH BAR */
+
+header .search #bar{
+    min-height: 100px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10% 10% 10%;
+    
+}
+
+span{
+    color: #1400ca;
+}
+
+
+form.searchbar input[type=text]{
+    width: 900px;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid #e05200;
+    border-radius: 10px 0 0 10px;
+    align-items: center;
+    outline: none;
+    color: #000000;
+    text-align: center;
+    transition: border-color 0.3s;
+    transition: border 0.5s;
+    transition: all 0.3s ease 0s;
+    font-family: Play-Bold;
+    letter-spacing: 1px;
+    opacity: 1;
+
+}
+form.searchbar input[type=text]:hover{
+    border-color: #e05200;
+    box-shadow: 0 0 3px #e05200;
+    color: black;
+    transition: all 0.3s ease 0s;
+    transition: border 1s;
+}
+form.searchbar input[type=text]:focus{
+    border:2px solid #1400ca;
+    transition: all 0.3s ease 0s;
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+   
+form.searchbar button{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #e05200;
+    border-radius: 0px 10px 10px 0px;
+    transition: box-shadown 0.3s, text-shadow 0.3s;
+    transition: background-color 0.5s;
+    transition: all 0.3s ease 0s;
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+form.searchbar button:hover{
+    border: 2px solid #1400ca;
+    transition: all 0.3s ease 0s;
+}
+form.searchbar button:hover:active{
+    background-color: #747474;
+}
+
+header .allcourse a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+header .allcourse button{
+    background-color: #192824;
+    width: 40%;
+    max-height: 8vh;
+    border-radius: 10px;
+    font-size: 25px;
+    padding-block: 10px;
+    transition: background-color 0.3s ease-in-out;
+    transition: 0.5s;
+    background-color: #1400ca;
+    border: 2px solid #e05200;
+    color: whitesmoke;
+}
+
+
+header .allcourse button:hover{
+    background-color: #e05200;
+    border: 2px solid #1400ca;
+}
+
+header .allcourse button:hover:active{
+    background-color: #e05200;
+}
+
+
+/* header .allcourse a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+header .allcourse i{
+    margin-left: 50px;
+    background-color: transparent;
+}
+
+header .allcourse button{
+    background-color: #192824;
+    width: 45%;
+    max-height: 8vh;
+    border-radius: 0 20px;
+    font-size: 40px;
+    transition: background-color 0.5s;
+    transition: 0.5s;
+    background-color: #1400ca;
+    border-color:   #e05200;
+    box-shadow: 0 0 10px  #1400ca;
+}
+
+
+header .allcourse button:hover{
+    background-color: #e05200;
+    border-color: #1400ca;
+    box-shadow: 0 0 10px #1400ca;
+    
+}
+
+header .allcourse button:hover:active{
+    background-color: #cc7949;
+    border-color:#3a3099;
+
+} */
+
+
+
+
+
+/* PADAYON WORD EFFECT */
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+.container1 p {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    color: #000000;
+    outline: none;
+    text-align: center;
+    margin: 1em;
+    /* text-shadow: 0 0 1px white; */
+  } 
+  
+.container1 p:hover {
+    color: #1400ca;
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
+
+
+
+
+  /* SHARE ICON */
+.share-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+
+
+}
+
+.share-icon i{
+    margin: 0px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+}
+
+.share-icon i:hover{
+    transform: translateY(-3px);
+    color: #1400ca;
+}
+
+
+
+/* PVMC */
+
+.mission{
+    text-align: center;
+
+}
+
+
+.mission h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.mission h2{
+    font-size: 30px;
+    /* text-shadow: 0 0 1px #ffffff; */
+    color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+    transition: .5s;
+    width: fit-content;
+    align-content: center;
+    margin: auto; 
+    text-align: center; 
+    background: rgba(255, 255, 255, 0.465);
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+.mission h2:hover{
+    transition: .3s;
+    box-shadow: 0 0 10px green;
+}
+
+
+
+
+.mission p{
+    margin: 20px;
+    font-size: 20px;
+    text-justify: inter-word;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0 0 10px green;
+    background-color: #241e1ea4;
+    border-radius: 20px;
+
+}
+
+.mission .coeVM p{
+    text-align: center;
+    margin: 20px 20%;
+}
+
+.mission .coeVM {
+    margin: -12% 0% ;
+}
+
+
+.mission .pvm-orig-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission .PVM  .pvm-box{
+    width: 30em;
+
+
+}
+
+.mission .pvm-box p {
+
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease, height 0.3s ease; 
+}
+
+.mission .pvm-box h2:hover + p {
+    display: block;
+    opacity: 1;
+    height: auto;
+    transition: opacity 1s ease, height 0.3s ease; 
+}
+
+
+
+
+.mission .PVM span::before{
+    content: "PLSP VISION";
+    transition: content 1s;
+    animation: vmp  infinite 10s;
+    transition: content 1s;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+
+@keyframes vmp {
+    25%{content: "PLSP VISION";
+        color: blue;}
+    50%{
+        content: "PLSP MISSION";
+        color: green;
+    }
+    75%{
+        content: "PLSP PHILOSOPHY";
+        color: orange;
+    }
+
+    
+}
+
+
+
+.mission .coeVM span::before{
+    content: "COE MISSION";
+    transition: content 1s;
+    animation: coevm  infinite 10s;
+    transition: color 1s;
+
+}
+
+@keyframes coevm {
+    0%{content: "COE VISION";
+        color: blue;}
+    50%{content: "COE VISION";
+        color: blue;}
+    100%{
+        content: "COE MISSION";
+        color: green;
+    }
+}
+
+
+
+
+/* WHAT THIS WEBSITE */
+
+header .what{
+    font-size: 20px;
+    margin: 20px;
+    padding: 0;
+    
+}
+header .what h1{
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+}
+header .what p{
+    text-align: justify;
+    line-height: 2;
+    color: rgb(0, 0, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffffff6e;
+    padding: 20px;
+    border-radius: 20px;
+   
+}
+
+.footer p{
+    text-align: center;
+    background-color: #192824;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 10px 10px;
+}
+
+
+/* STYLE FOR ONE FILE WITH MULTIPLE PAGES */
+
+.pages {
+    margin-top: 0;
+    min-height: 80vh;
+    border-radius: 8px;
+    background: url(image/bg2.jpg) no-repeat center ;
+    color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+
+/* MOTIVITIONAL STYLE */
+#motiv{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+
+#motiv h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: NeonZOne;
+    letter-spacing: 2px;
+    background: #ffffff71;
+}
+.slideshow-container {
+    position: relative;
+    background-color: #ffffff75;
+    border-radius: 20px;
+    margin: 100px 50px 50px 50px;
+    box-shadow: 20px 20px 10px black, -20px -20px 10px black, -20px 20px 10px black, 20px -20px 10px black;
+}
+  
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+  
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    margin-top: -20px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover{
+    color: black;
+}
+
+  
+
+.dot-container {text-align: center;}
+  
+
+.dot {
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+ 
+.active, .dot:hover {
+    background-color: #000000;
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+  
+q {
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+  
+.author {
+    color: #f8f8f8;
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+/* CONTACT US */
+
+.contact{
+    padding: 0;
+    margin: 0;
+}
+
+
+.contact h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: NeonZOne;
+    letter-spacing: 2px;
+    background: #ffffff71;
+
+
+}
+
+
+.contact form{
+    width: 640px;
+    margin: 0px auto;
+    max-width: 97%;
+    border-radius: 4px;
+    padding: 30px;
+    transition: 0.6s;
+    background: #ffffff71;
+}
+
+
+
+
+
+/* .contact form:hover{
+    background: rgba(27,31,34,0.80);
+    transition: 0.6s;
+} */
+form h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+  
+
+form .half{
+    display: flex;
+    justify-content: space-between;
+}
+  
+form .half .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 48%;
+}
+  
+form label{
+    display: block;
+    font-size: 25px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+    color: #000000;
+
+}
+  
+form .half .item input{
+    border-radius: 4px;
+    border: 2px solid #000000;
+    outline: 0;
+    padding: 16px;
+    width: 100%;
+    height: 44px;
+    background: rgb(255, 255, 255);
+    font-size: 17px;
+    text-transform: uppercase;
+    color:#000000;
+}
+  
+form .full{
+    margin-bottom: 24px;
+}
+  
+form .full textarea{
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 2px solid #000000;
+    outline: 0;
+    padding: 12px 16px;
+    width: 100%;
+    height: 150px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+
+form .bottom input{ 
+    display: none;
+}
+
+
+form .upload label{
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 20px;
+    transition: .6s;
+    font-size: 30px;
+    background: white;
+
+
+
+}
+
+form .upload label:hover{
+    background-color: #000875;
+    box-shadow: 0 0 5px #000875;
+    transition: .6s;
+}
+
+
+form .action{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rebeccapurple;
+    padding: 15px;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: NeonZOne;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid black;
+    transition: .6s;
+
+}
+
+form .button:hover{
+    background-color: #000875;
+    box-shadow: 0 0 5px blue;
+    transition: .6s;
+}
+
+
+
+
+
+form .half .item input:focus, form .full textarea:focus{
+    background: rgba(255,255,255,0.075);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: .6s;
+    box-shadow: 0 0 5px black;
+  }
+
+  
+
+
+  
+@media (max-width: 480px){
+    form .half{
+      flex-direction: column;
+    }
+    form .half .item{
+      width: 100%;
+    }
+    form .action{
+      display: flex;
+      flex-direction: column;
+    }
+    form .action input{
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  
+
+
+
+  
+
+
+  /* ABOUT US */
+#about {
+    padding: 0;
+    margin: 0;
+}
+
+#about h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: NeonZOne;
+    letter-spacing: 2px;
+    background: #ffffff71;
+
+}
+
+
+#about .container {
+    text-align: center;
+}
+/* 
+.header {
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+} */
+
+#about .sub-container {
+    max-width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about .teams {
+    margin: 10px 5px;
+    padding: 20px;
+    width: 25%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+    background: #dddddd54;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    border: 3px solid rgba(0, 0, 0, 0.035);
+}
+
+#about .teams:hover {
+    background: #ddd;
+    border-radius: 20px;
+    border: 3px solid #000000;
+    transition: .3s;
+}
+
+#about .teams img {
+    width: 130px;
+    height: 130px;
+    border-color: #1400ca;
+    align-items: center;
+    margin-left: -2px;
+}
+
+#about .name {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin-left: -2px;
+}
+
+#about .desig {
+    font-style: italic;
+    font-weight:bold;
+    font-size: 20px;
+    color: #000000;
+    margin-left: -2px;
+}
+
+#about .about {
+    margin: 20px 0;
+    font-weight:bold;
+    font-size: 15px;
+    font-family: monospace;
+    color: #000000;
+    margin-left: -4px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .teams {
+        max-width: 100%;
+    }
+}
+
+
+
